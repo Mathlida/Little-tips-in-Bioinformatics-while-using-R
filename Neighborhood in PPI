@@ -11,7 +11,7 @@ disgene=as.character(unlist(disgene))
 order=1
 gene_seed=neighborhood(graph_hint,order,disgene)
 #order one the adjacent nodes, order two the adjacent to the adjacents, and so on.
-allgene=vector()
+allgene=vector()#use allgene to save all the disease genes and their neighbors
 for(i in 1:nrows){
 	allgene=c(allgene,gene_seed[[i]])
 }
